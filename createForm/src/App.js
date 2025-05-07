@@ -34,7 +34,11 @@ export default function App() {
       });
       const data = await res.json();
       setResponse(data);
-      setForm(form);
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+      });
     } catch (error) {
       console.error("API ERROR", error);
     }
