@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
+import React from "react";
 
 export default function App() {
   //state for Form
@@ -8,7 +9,6 @@ export default function App() {
     email: "",
     phone: "",
   });
-
   //onChangeHandler
   const onChangeHandler = (e) => {
     console.log("e", e);
@@ -43,6 +43,7 @@ export default function App() {
       console.error("API ERROR", error);
     }
   };
+  // console.log("test")
   return (
     <div className="App">
       {/* Form
